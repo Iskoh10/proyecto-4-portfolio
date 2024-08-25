@@ -1,0 +1,31 @@
+.div_logo {
+  border: 1px solid rgb(69, 69, 255);
+}
+
+header.header {
+  border: 1px solid red;
+  width: 100%;
+  gap: 5px;
+  padding: 2%;
+  justify-content: space-between;
+}
+
+.links {
+  border: 1px solid lime;
+  width: 70%;
+  cursor: pointer;
+}
+
+.ulLinks {
+  padding: 0 2%;
+  gap: 10px 50px;
+}
+
+.ulLinks a li {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-weight: 600;
+}
+
+.ulLinks li:hover {
+  color: goldenrod;
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
+:root {
+  color-scheme: light dark;
+  color: #ffffffde;
+  background-color: #383f3f;
+
+  --isc-margin-0: 0;
+  --isc-padding-0: 0;
+  --isc-font-family: 'Yomogi', cursive;
+  --isc-font-weight: 400;
+  --isc-font-style: normal;
+}
+
+* {
+  margin: var(--isc-margin-0);
+  padding: var(--isc-padding-0);
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: var(--isc-font-family);
+  font-weight: var(--isc-font-weight);
+  font-style: var(--isc-font-style);
+}
+
+ol,
+ul,
+a {
+  list-style: none;
+}
+
+a {
+  color: #ffffffde;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #161617;
+    background-color: #ffffff;
+  }
+}

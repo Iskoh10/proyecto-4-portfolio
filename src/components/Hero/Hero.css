@@ -1,0 +1,62 @@
+section.div_hero {
+  border: 1px solid violet;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+div.div_profile {
+  padding-left: 5%;
+  width: 100%;
+  gap: 4%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.div_avatar > img {
+  width: 100px;
+  object-fit: cover;
+}
+
+.a_job {
+  text-align: center;
+  border: 1px solid #317431;
+  background-color: #cae6a2;
+  padding: 2px 10px;
+  border-radius: 30px;
+  color: #317431;
+  font-weight: 600;
+  position: relative;
+}
+
+.a_job:before {
+  content: '';
+  width: 5px;
+  height: 2px;
+  border-radius: 50px;
+  background-color: lime;
+  position: absolute;
+  bottom: -1px;
+  animation: moving 1s infinite linear alternate;
+}
+
+@keyframes moving {
+  100% {
+    transform: translatex(180px);
+  }
+}
+
+.a_job:hover {
+  box-shadow: 1px 1px 5px black;
+  transform: scale(1.1);
+}
+
+div.info_hero {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 5%;
+}
+
+div.info_hero > * {
+  font-weight: 600;
+}
