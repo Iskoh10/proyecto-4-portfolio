@@ -1,0 +1,7 @@
+section.sec_est {
+  width: 200px;
+  height: 300px;
+  border: 1px solid red;
+  background-color: rgb(247, 108, 108);
+  display: none;
+}

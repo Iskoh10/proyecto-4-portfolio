@@ -1,5 +1,6 @@
 import { createHeader } from '/src/components/Header/Header';
 import { createMain } from '/src/components/Main/Main';
+import { createFooter } from '/src/components/Footer/Footer';
 import './Layout.css';
 
 export const createLayout = () => {
@@ -22,10 +23,8 @@ export const createLayout = () => {
 
   const footer = document.createElement('footer');
   footer.classList.add('footer', 'flex_container');
-  const pFooter = document.createElement('p');
-  pFooter.textContent = 'Footer';
 
-  footer.appendChild(pFooter);
+  createFooter(footer);
 
   mainContainer.appendChild(footer);
 

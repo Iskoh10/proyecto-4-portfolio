@@ -2,7 +2,7 @@ import './Hero.css';
 
 export const createHero = (parentNode) => {
   const sectionHero = document.createElement('section');
-  sectionHero.classList.add('div_hero', 'flex_container');
+  sectionHero.classList.add('hero', 'flex_container');
 
   const divProfile = document.createElement('div');
   divProfile.classList.add('div_profile', 'flex_container');
@@ -15,13 +15,16 @@ export const createHero = (parentNode) => {
   divAvatar.appendChild(imgAvatar);
   divProfile.appendChild(divAvatar);
 
+  const divA = document.createElement('div');
+  divA.classList.add('btn_animated', 'flex_container');
   const aJob = document.createElement('a');
   aJob.className = 'a_job';
   aJob.href = 'https://www.linkedin.com/in/fjespmar/';
   aJob.setAttribute('target', '_blank');
   aJob.textContent = 'Disponible para trabajar';
 
-  divProfile.appendChild(aJob);
+  divA.appendChild(aJob);
+  divProfile.appendChild(divA);
 
   const infoHero = document.createElement('div');
   infoHero.classList.add('info_hero', 'flex_container');
@@ -34,6 +37,46 @@ export const createHero = (parentNode) => {
 
   infoHero.appendChild(h2);
   infoHero.appendChild(p);
+
+  const btnContacts = document.createElement('div');
+  btnContacts.classList.add('btn_contacts', 'flex_container');
+
+  const btnContactMe = document.createElement('a');
+  btnContactMe.textContent = 'Contáctame';
+  btnContactMe.addEventListener('click', () => {
+    divMail.classList.toggle('show_mail');
+  });
+
+  const btnLinkedIn = document.createElement('a');
+  btnLinkedIn.href = 'https://www.linkedin.com/in/fjespmar/';
+  btnLinkedIn.setAttribute('target', '_blank');
+  btnLinkedIn.textContent = 'LinkedIn';
+
+  btnContacts.appendChild(btnContactMe);
+  btnContacts.appendChild(btnLinkedIn);
+
+  const divMail = document.createElement('div');
+  divMail.classList.add('div_mail', 'flex_container');
+
+  const pMail1 = document.createElement('p');
+  pMail1.textContent = 'Escríbeme a';
+  divMail.appendChild(pMail1);
+
+  const pMail2 = document.createElement('p');
+  pMail2.textContent = 'iscoesp@gmail.com';
+  pMail2.addEventListener('click', async () => {
+    const mail = pMail2.innerHTML;
+    try {
+      await navigator.clipboard.writeText(mail);
+      console.log('Te has copiado mi mail en el portapapeles');
+    } catch (error) {
+      console.log('Hubo un error al copiar mi mail:', error);
+    }
+  });
+  divMail.appendChild(pMail2);
+
+  infoHero.appendChild(btnContacts);
+  infoHero.appendChild(divMail);
 
   sectionHero.appendChild(divProfile);
   sectionHero.appendChild(infoHero);

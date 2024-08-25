@@ -1,5 +1,29 @@
-.main {
+main.main {
   border: 1px solid orange;
   width: 100%;
   height: 50dvh;
+  align-items: flex-start;
+}
+
+.sec_selection {
+  width: 100%;
+  gap: 4%;
+}
+
+.sec_selection p {
+  cursor: pointer;
+}
+
+.div_section {
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+}
+
+p.selected {
+  border-bottom: 1px solid white;
+}
+
+section.div_sx_show {
+  display: flex;
 }
