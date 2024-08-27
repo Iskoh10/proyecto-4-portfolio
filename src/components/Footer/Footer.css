@@ -1,6 +1,11 @@
 .footer {
-  border: 1px solid blue;
+  background-color: var(--isc-bg-footer);
   width: 100%;
   height: 5dvh;
   bottom: 0;
+  border-top: var(--isc-b-footer);
+}
+
+.footer > p {
+  font-weight: var(--isc-fw-sb);
 }

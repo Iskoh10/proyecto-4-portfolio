@@ -1,14 +1,14 @@
 header.header {
   width: 100%;
-  gap: 5px;
-  padding: 2%;
-  justify-content: space-between;
-  position: sticky;
+  gap: var(--isc-gap-5);
+  padding: var(--isc-padding-2);
+  justify-content: var(--isc-jc-sb);
+  position: var(--isc-position-sticky);
   top: 0;
   left: 0;
   z-index: 2;
-  background-color: #383f3f;
-  border-bottom: 2px solid black;
+  background-color: var(--isc-bg-header);
+  border-bottom: var(--isc-b-header);
 }
 
 .links {
@@ -17,17 +17,17 @@ header.header {
 }
 
 .ulLinks {
-  padding: 0 2%;
-  gap: 10px 50px;
+  padding: var(--isc-padding-0-2);
+  gap: var(--isc-gap-10-50);
 }
 
 .ulLinks a li {
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
-  font-weight: 600;
+  font-size: var(--isc-fs-clamp);
+  font-weight: var(--isc-fw-sb);
 }
 
 .ulLinks li:hover {
-  color: goldenrod;
+  color: var(--isc-color-li-hover);
 }
 
 @media screen and (max-width: 388px) {

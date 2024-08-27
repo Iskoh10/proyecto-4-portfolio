@@ -1,3 +1,4 @@
+import { createButton, createButton1 } from '/src/components/Buttons/Buttons';
 import './Hero.css';
 
 export const createHero = (parentNode) => {
@@ -18,13 +19,16 @@ export const createHero = (parentNode) => {
 
   const divA = document.createElement('div');
   divA.classList.add('btn_animated', 'flex_container');
-  const aJob = document.createElement('a');
-  aJob.className = 'a_job';
-  aJob.href = 'https://www.linkedin.com/in/fjespmar/';
-  aJob.setAttribute('target', '_blank');
-  aJob.textContent = 'Disponible para trabajar';
 
-  divA.appendChild(aJob);
+  createButton({
+    identifier: 'a_job',
+    url: 'https://www.linkedin.com/in/fjespmar/',
+    attributeKey: 'target',
+    attributeValue: '_blank',
+    text: 'Disponible para trabajar',
+    parentNode: divA
+  });
+
   divProfile.appendChild(divA);
 
   const infoHero = document.createElement('div');
@@ -41,20 +45,6 @@ export const createHero = (parentNode) => {
 
   const btnContacts = document.createElement('div');
   btnContacts.classList.add('btn_contacts', 'flex_container');
-
-  const btnContactMe = document.createElement('a');
-  btnContactMe.textContent = 'Contáctame';
-  btnContactMe.addEventListener('click', () => {
-    divMail.classList.toggle('show_mail');
-  });
-
-  const btnLinkedIn = document.createElement('a');
-  btnLinkedIn.href = 'https://www.linkedin.com/in/fjespmar/';
-  btnLinkedIn.setAttribute('target', '_blank');
-  btnLinkedIn.textContent = 'LinkedIn';
-
-  btnContacts.appendChild(btnContactMe);
-  btnContacts.appendChild(btnLinkedIn);
 
   const divMail = document.createElement('div');
   divMail.classList.add('div_mail', 'flex_container');
@@ -75,6 +65,21 @@ export const createHero = (parentNode) => {
     }
   });
   divMail.appendChild(pMail2);
+
+  createButton1({
+    text: 'Contáctame',
+    parentNode: btnContacts,
+    func: divMail
+  });
+
+  createButton({
+    identificator: 'a_in',
+    url: 'https://www.linkedin.com/in/fjespmar/',
+    attributeKey: 'target',
+    attributeValue: '_blank',
+    text: 'LinkedIn',
+    parentNode: btnContacts
+  });
 
   infoHero.appendChild(btnContacts);
   infoHero.appendChild(divMail);

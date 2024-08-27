@@ -1,23 +1,23 @@
 section.sec_exp {
   width: 80%;
-  flex-direction: column;
-  border: 1px solid rgb(70, 51, 241);
-  border-radius: 20px;
-  background-color: #383f3f;
-  gap: 4%;
-  padding: 2%;
-  position: relative;
-  display: none;
+  flex-direction: var(--isc-flex-column);
+  border: var(--isc-b-sec-est-exp);
+  border-radius: var(--isc-br-1);
+  background-color: var(--isc-bg-color1);
+  gap: var(--isc-gap-4);
+  padding: var(--isc-padding-2);
+  position: var(--isc-position-rel);
+  display: var(--isc-disp-none);
 }
 
 section.sec_exp p:nth-of-type(odd) {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 4%;
+  font-size: var(--isc-fs-exp-title);
+  font-weight: var(--isc-fw-sb);
+  margin-bottom: var(--isc-margin-4);
 }
 
 section.sec_exp p:nth-of-type(even) {
-  margin-bottom: 10%;
-  font-size: 20px;
-  text-align: center;
+  margin-bottom: var(--isc-margin-10);
+  font-size: var(--isc-fs-p);
+  text-align: var(--isc-text-align);
 }

@@ -1,51 +1,50 @@
 section.sec_est {
   width: 80%;
-  flex-direction: column;
-  border: 1px solid rgb(70, 51, 241);
-  border-radius: 20px;
-  background-color: #383f3f;
-  gap: 4%;
-  padding: 2%;
-  position: relative;
-  display: none;
+  flex-direction: var(--isc-flex-column);
+  border: var(--isc-b-sec-est-exp);
+  border-radius: var(--isc-br-1);
+  background-color: var(--isc-bg-color1);
+  gap: var(--isc-gap-4);
+  padding: var(--isc-padding-2);
+  position: var(--isc-position-rel);
+  display: var(--isc-disp-none);
 }
 
 section.sec_est > h2 {
-  padding-bottom: 4%;
+  padding-bottom: var(--isc-padding-4);
 }
 
 section.sec_est p {
-  text-align: center;
-  padding: 2%;
+  text-align: var(--isc-text-align);
+  padding: var(--isc-padding-2);
 }
 
 section.sec_est p:nth-of-type(odd) {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: var(--isc-fs-exp-title);
+  font-weight: var(--isc-fw-sb);
 }
 
 section.sec_est p:nth-of-type(even) {
-  font-size: 20px;
+  font-size: var(--isc-fs-p);
 }
 
 section.sec_est p:nth-of-type(5) {
-  margin-top: 5%;
+  margin-top: var(--isc-margin-4);
 }
 
 section.sec_est h3 {
-  margin-top: 8%;
-  margin-bottom: 3%;
-  text-align: center;
+  margin-top: var(--isc-margin-10);
+  margin-bottom: var(--isc-margin-4);
+  text-align: var(--isc-text-align);
 }
 
-div.div_skillsLearned {
+div.div_skillsLearned,
+div.div_skillsSoon {
   width: 80%;
-  justify-content: space-evenly;
-  gap: 3%;
+  justify-content: var(--isc-jc-se);
+  gap: var(--isc-gap-4);
 }
 
 div.div_skillsSoon {
   width: 100%;
-  justify-content: space-evenly;
-  gap: 3%;
 }

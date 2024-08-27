@@ -1,15 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 
 :root {
-  color-scheme: light dark;
-  color: #ffffffde;
-  background-color: #383f3f;
+  /* colors */
+  --isc-transp-color: transparent;
+  --isc-white-color: #ffffffde;
+  --isc-dark-grey: #383f3f;
+  --isc-black-color: #1d2020;
+  --isc-blue-color: #4633f1;
+  --isc-chartreuse-color: chartreuse;
+  --isc-dark-green-color: #317431;
+  --isc-golden-color: goldenrod;
 
-  --isc-margin-0: 0;
-  --isc-padding-0: 0;
+  --isc-fc: var(--isc-white-color);
+  --isc-bg-color1: var(--isc-dark-grey);
+  --isc-bg-color2: var(--isc-black-color);
+  --isc-bc-section: var(--isc-blue-color);
+  --isc-bg-scrollbar-thumb: var(--isc-black-color);
+  --isc-bg-card: var(--isc-black-color);
+  --isc-bg-btn-animated: var(--isc-dark-green-color);
+  --isc-bc-btn-animated: var(--isc-chartreuse-color);
+  --isc-bg-header: var(--isc-dark-grey);
+  --isc-color-li-hover: var(--isc-golden-color);
+  --isc-bg-footer: var(--isc-dark-grey);
+
+  /* typo */
   --isc-font-family: 'Yomogi', cursive;
   --isc-font-weight: 400;
   --isc-font-style: normal;
+  --isc-text-align: center;
+
+  /* font size */
+  --isc-fs-p: 20px;
+  --isc-fs-exp-title: 24px;
+  --isc-fs-30: 30px;
+  --isc-fs-48: 48px;
+  --isc-fs-clamp: clamp(1.5rem, 2vw, 2rem);
+
+  /* font weight*/
+  --isc-fw-sb: 600;
+
+  /* margin */
+  --isc-margin-0: 0;
+  --isc-margin-50: 50px;
+
+  --isc-margin-2: 2%;
+  --isc-margin-4: 4%;
+  --isc-margin-10: 10%;
+
+  --isc-margin-0-1: 0 1%;
+
+  /* gap */
+  --isc-gap-4: 4%;
+  --isc-gap-2: 2%;
+
+  --isc-gap-5: 5px;
+  --isc-gap-30: 30px;
+
+  --isc-gap-10-50: 10px 50px;
+
+  /* padding */
+  --isc-padding-0: 0;
+  --isc-padding-2: 2%;
+  --isc-padding-4: 4%;
+
+  --isc-padding-20: 20px;
+  --isc-padding-50: 50px;
+  --isc-padding-80: 80px;
+  --isc-padding-120: 120px;
+  --isc-padding-200: 200px;
+
+  --isc-padding-2-10: 2px 10px;
+
+  --isc-padding-0-2: 0 2%;
+  --isc-padding-1-2: 1% 2%;
+  --isc-padding-2-5: 2% 5%;
+
+  /* display */
+  --isc-disp-none: none;
+  --isc-disp-inflex: inline-flex;
+  --isc-disp-flex: flex;
+
+  /* position */
+  --isc-position-rel: relative;
+  --isc-position-bottom: fixed;
+  --isc-position-abs: absolute;
+  --isc-position-sticky: sticky;
+
+  /* flex properties */
+  --isc-flex-column: column;
+
+  --isc-jc-se: space-evenly;
+  --isc-jc-sb: space-between;
+  --isc-jc-center: center;
+  --isc-jc-fs: flex-start;
+  --isc-jc-fe: flex-end;
+
+  --isc-ai-center: center;
+  --isc-ai-fs: flex-start;
+
+  --isc-flex-w: wrap;
+
+  /* border */
+  --isc-b-sec-est-exp: 1px solid var(--isc-b-sec-est-exp);
+  --isc-b-btn-card: 1px solid var(--isc-white-color);
+  --isc-b-est-exp: var(--isc-b-btn-card);
+  --isc-b-btn-contacts: 1px solid var(--isc-white-color);
+  --isc-b-btn-cont-hover: 2px solid var(--isc-white-color);
+  --isc-b-header: 2px solid var(--isc-white-color);
+  --isc-b-footer: 1px solid var(--isc-white-color);
+
+  /* border radius */
+  --isc-br-1: 20px;
+  --isc-br-2: 50%;
+
+  /* box shadow */
+  --isc-bs-btn-animated: 1px 1px 5px var(--isc-black-color);
+  --isc-bs-btn-contacts: 1px 1px 5px var(--isc-black-color),
+    -1px -1px 5px var(--isc-white-color);
 }
 
 * {
@@ -20,6 +127,8 @@
   font-family: var(--isc-font-family);
   font-weight: var(--isc-font-weight);
   font-style: var(--isc-font-style);
+  color: var(--isc-fc);
+  background-color: var(--isc-bg-color1);
 }
 
 ol,
@@ -30,21 +139,4 @@ a {
 
 a {
   color: #ffffffde;
-}
-
-.dark_mode {
-  background-color: #383f3f;
-  color: #ffffffde;
-}
-
-.light_mode {
-  background-color: #ffffffde;
-  color: #383f3f;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: #161617;
-    background-color: #ffffff;
-  }
 }

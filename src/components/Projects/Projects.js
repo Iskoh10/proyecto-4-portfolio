@@ -1,4 +1,5 @@
 import { projects } from '/src/components/Data/Data';
+import { createButton2 } from '/src/components/Buttons/Buttons';
 import './Projects.css';
 
 export const createSecProjects = (parentNode) => {
@@ -49,16 +50,18 @@ export const createSecProjects = (parentNode) => {
       const pCard = document.createElement('p');
       pCard.textContent = project.description;
 
-      const btnApp = document.createElement('a');
-      btnApp.classList.add('btn_app', 'flex_container');
-      btnApp.textContent = 'Ver App';
-      btnApp.href = project.urlApp;
+      createButton2({
+        identifier1: 'btn_app',
+        identifier2: 'flex_container',
+        text: 'Ver App',
+        url: project.urlApp,
+        parentNode: divCard
+      });
 
       divImgCard.appendChild(img);
       divCard.appendChild(divImgCard);
       divCard.appendChild(h3Card);
       divCard.appendChild(pCard);
-      divCard.appendChild(btnApp);
 
       divCards.appendChild(divCard);
     }

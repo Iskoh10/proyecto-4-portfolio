@@ -1,15 +1,13 @@
 div.main_container {
-  border: 3px solid #83008b;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: var(--isc-flex-column);
+  justify-content: var(--isc-jc-fs);
   width: 100%;
-
-  gap: 5%;
+  gap: var(--isc-gap-4);
 }
 
 .flex_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: var(--isc-disp-flex);
+  justify-content: var(--isc-jc-center);
+  align-items: var(--isc-ai-center);
+  flex-wrap: var(--isc-flex-w);
 }

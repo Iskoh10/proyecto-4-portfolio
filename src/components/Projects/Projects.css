@@ -1,48 +1,49 @@
 div.div_projects {
-  flex-direction: column;
+  flex-direction: var(--isc-flex-column);
   width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: var(--isc-margin-4);
 }
 
 .div_projects > h3 {
-  padding: 5%;
-  font-size: 30px;
-  font-weight: 600;
+  padding: var(--isc-padding-4);
+  font-size: var(--isc-fs-30);
+  font-weight: var(--isc-fw-sb);
 }
 
 div.div_container {
   width: 650px;
-  text-align: center;
+  text-align: var(--isc-text-align);
   overflow: hidden;
 }
 
 div.div_container > a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1d2020;
-  border-radius: 50%;
+  display: var(--isc-disp-inflex);
+  justify-content: var(--isc-jc-center);
+  align-items: var(--isc-ai-center);
+  background-color: var(--isc-bg-color2);
+  border-radius: var(--isc-br-2);
   width: 30px;
   height: 30px;
-  margin: 0 1%;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 2%;
+  margin: var(--isc-margin-0-1);
+  font-size: var(--isc-fs-p);
+  font-weight: var(--isc-fw-sb);
+  margin-bottom: var(--isc-margin-2);
 }
 
-div.div_container > a :focus {
-  background-color: chartreuse;
+div.div_container > a:focus {
+  background-color: var(--isc-chartreuse-color);
+  color: var(--isc-black-color);
 }
 
 div.div_cards {
-  display: flex;
+  display: var(--isc-disp-flex);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
 
 .div_cards::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: var(--isc-transp-color);
 }
 
 .div_cards::-webkit-scrollbar {
@@ -51,56 +52,66 @@ div.div_cards {
 }
 
 .div_cards::-webkit-scrollbar-thumb {
-  background-color: black;
-  border-radius: 15px;
+  background-color: var(--isc-bg-scrollbar-thumb);
+  border-radius: var(--isc-br-1);
 }
 
 .div_cards > div {
-  flex-direction: column;
+  flex-direction: var(--isc-flex-column);
   scroll-snap-align: start;
-  justify-content: flex-start;
+  justify-content: var(--isc-jc-fs);
   width: 300px;
   height: 400px;
-  margin-right: 50px;
-  border-radius: 10px;
-  background-color: #1d2020;
+  margin-right: var(--isc-margin-50);
+  border-radius: var(--isc-br-1);
+  background-color: var(--isc-bg-card);
   transform-origin: center center;
   transform: scale(1);
   transition: transform 0.5s;
-  position: relative;
+  position: var(--isc-position-rel);
   flex-shrink: 0;
 }
 
 div.div_imgCard {
   width: 80%;
-  margin-top: 5%;
+  margin-top: var(--isc-margin-4);
+  background-color: var(--isc-bg-card);
 }
 
 .div_imgCard img {
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: var(--isc-br-1);
   width: 100%;
   height: 150px;
 }
 
 .div_cards > div > h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 5%;
+  font-size: var(--isc-fs-exp-title);
+  font-weight: var(--isc-fw-sb);
+  margin: var(--isc-margin-4);
+  background-color: var(--isc-bg-card);
 }
 
 .div_cards > div > p {
   width: 80%;
+  background-color: var(--isc-bg-card);
 }
 
 .div_cards > div > a {
-  position: fixed;
+  position: var(--isc-position-bottom);
   bottom: 0;
-  margin: 5%;
-  background-color: #383f3f;
+  margin: var(--isc-margin-4);
   width: 80%;
-  padding: 2%;
-  border-radius: 20px;
+  padding: var(--isc-padding-2);
+  border-radius: var(--isc-br-1);
+  background: linear-gradient(79deg, #1d2020 0%, #383f3f 25%, #bebebe 100%);
+  background-size: 200%;
+}
+
+.div_cards > div > a:hover {
+  background-size: 120%;
+  background-position: left center;
+  border: var(--isc-b-btn-card);
 }
 
 @media screen and (max-width: 684px) {

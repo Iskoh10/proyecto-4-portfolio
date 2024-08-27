@@ -1,14 +1,13 @@
 main.main {
-  border: 1px solid orange;
   width: 100%;
-  align-items: flex-start;
+  align-items: var(--isc-ai-fs);
 }
 
 section.sec_est_exp {
-  position: relative;
+  position: var(--isc-position-rel);
   width: 100%;
   top: -100px;
-  padding-top: 20px;
+  padding-top: var(--isc-padding-20);
 }
 
 .div_est_exp {
@@ -19,74 +18,51 @@ section.sec_est_exp {
 div.sec_selection {
   width: 100%;
   height: 20%;
-  gap: 4%;
-  background-color: #1d2020;
-  position: relative;
-  padding-top: 50px;
+  gap: var(--isc-gap-4);
+  background-color: var(--isc-black-color);
+  position: var(--isc-position-rel);
+  padding-top: var(--isc-padding-50);
   overflow: hidden;
-}
-
-.sec_selection::before {
-  content: '';
-  position: absolute;
-  width: 700px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #383f3f;
-  top: -40px;
-  right: -20px;
-  transform: rotate(3deg);
-}
-
-.sec_selection::after {
-  content: '';
-  position: absolute;
-  width: 700px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #383f3f;
-  top: -45px;
-  left: -40px;
-  transform: rotate(-6deg);
 }
 
 .sec_selection p {
   cursor: pointer;
-  padding-top: 4%;
-  font-size: 28px;
+  padding-top: var(--isc-padding-4);
+  font-size: var(--isc-fs-exp-title);
+  background-color: var(--isc-black-color);
 }
 
 div.div_section {
   width: 100%;
   height: 100%;
-  padding: 5%;
-  gap: 30px;
-  background-color: #1d2020;
-  align-items: flex-start;
+  padding: var(--isc-padding-4);
+  gap: var(--isc-gap-30);
+  background-color: var(--isc-black-color);
+  align-items: var(--isc-ai-fs);
 }
 
 p.selected {
-  border-bottom: 1px solid white;
+  border-bottom: var(--isc-b-est-exp);
 }
 
 section.div_sx_show {
-  display: flex;
+  display: var(--isc-disp-flex);
 }
 
 @media screen and (max-width: 915px) {
   section.sec_est_exp {
-    padding-top: 50px;
+    padding-top: var(--isc-padding-50);
   }
 }
 
 @media screen and (max-width: 455px) {
   section.sec_est_exp {
-    padding-top: 80px;
+    padding-top: var(--isc-padding-80);
   }
 }
 
 @media screen and (max-width: 388px) {
   section.sec_est_exp {
-    padding-top: 120px;
+    padding-top: var(--isc-padding-120);
   }
 }
