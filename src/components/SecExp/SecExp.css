@@ -1,7 +1,23 @@
 section.sec_exp {
-  width: 200px;
-  height: 300px;
-  border: 1px solid #0011ff;
-  background-color: aqua;
+  width: 80%;
+  flex-direction: column;
+  border: 1px solid rgb(70, 51, 241);
+  border-radius: 20px;
+  background-color: #383f3f;
+  gap: 4%;
+  padding: 2%;
+  position: relative;
   display: none;
+}
+
+section.sec_exp p:nth-of-type(odd) {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4%;
+}
+
+section.sec_exp p:nth-of-type(even) {
+  margin-bottom: 10%;
+  font-size: 20px;
+  text-align: center;
 }

@@ -1,7 +1,51 @@
 section.sec_est {
-  width: 200px;
-  height: 300px;
-  border: 1px solid red;
-  background-color: rgb(247, 108, 108);
+  width: 80%;
+  flex-direction: column;
+  border: 1px solid rgb(70, 51, 241);
+  border-radius: 20px;
+  background-color: #383f3f;
+  gap: 4%;
+  padding: 2%;
+  position: relative;
   display: none;
+}
+
+section.sec_est > h2 {
+  padding-bottom: 4%;
+}
+
+section.sec_est p {
+  text-align: center;
+  padding: 2%;
+}
+
+section.sec_est p:nth-of-type(odd) {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+section.sec_est p:nth-of-type(even) {
+  font-size: 20px;
+}
+
+section.sec_est p:nth-of-type(5) {
+  margin-top: 5%;
+}
+
+section.sec_est h3 {
+  margin-top: 8%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+div.div_skillsLearned {
+  width: 80%;
+  justify-content: space-evenly;
+  gap: 3%;
+}
+
+div.div_skillsSoon {
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 3%;
 }

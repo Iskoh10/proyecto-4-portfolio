@@ -1,17 +1,17 @@
-.div_logo {
-  border: 1px solid rgb(69, 69, 255);
-}
-
 header.header {
-  border: 1px solid red;
   width: 100%;
   gap: 5px;
   padding: 2%;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #383f3f;
+  border-bottom: 2px solid black;
 }
 
 .links {
-  border: 1px solid lime;
   width: 70%;
   cursor: pointer;
 }
@@ -22,10 +22,16 @@ header.header {
 }
 
 .ulLinks a li {
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   font-weight: 600;
 }
 
 .ulLinks li:hover {
   color: goldenrod;
+}
+
+@media screen and (max-width: 388px) {
+  div.div_logo {
+    transform: translateX(50px) scale(1.4);
+  }
 }

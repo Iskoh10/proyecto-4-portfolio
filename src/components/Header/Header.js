@@ -5,6 +5,10 @@ export const createHeader = (parendNode) => {
   divLogo.classList.add('div_logo', 'flex_container');
   const logo = document.createElement('img');
   logo.src = 'public/darkFlaticon.svg';
+  divLogo.addEventListener('click', () => {
+    const mainContainer = document.querySelector('.main_container');
+    mainContainer.classList.toggle('dark_mode');
+  });
   divLogo.appendChild(logo);
 
   const divLinks = document.createElement('div');
@@ -35,7 +39,7 @@ export const createHeader = (parendNode) => {
   aAbout.appendChild(liAbout);
 
   const aContact = document.createElement('a');
-  aContact.href = '#contact';
+  aContact.href = 'mailto:correoelectronico@.com';
   const liContact = document.createElement('li');
   liContact.textContent = 'Contacto';
 

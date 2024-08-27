@@ -32,6 +32,16 @@ a {
   color: #ffffffde;
 }
 
+.dark_mode {
+  background-color: #383f3f;
+  color: #ffffffde;
+}
+
+.light_mode {
+  background-color: #ffffffde;
+  color: #383f3f;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color: #161617;

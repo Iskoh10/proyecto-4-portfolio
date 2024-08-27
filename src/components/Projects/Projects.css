@@ -1,0 +1,110 @@
+div.div_projects {
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.div_projects > h3 {
+  padding: 5%;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+div.div_container {
+  width: 650px;
+  text-align: center;
+  overflow: hidden;
+}
+
+div.div_container > a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d2020;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0 1%;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+
+div.div_container > a :focus {
+  background-color: chartreuse;
+}
+
+div.div_cards {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.div_cards::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.div_cards::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+.div_cards::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 15px;
+}
+
+.div_cards > div {
+  flex-direction: column;
+  scroll-snap-align: start;
+  justify-content: flex-start;
+  width: 300px;
+  height: 400px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background-color: #1d2020;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  flex-shrink: 0;
+}
+
+div.div_imgCard {
+  width: 80%;
+  margin-top: 5%;
+}
+
+.div_imgCard img {
+  object-fit: cover;
+  border-radius: 20px;
+  width: 100%;
+  height: 150px;
+}
+
+.div_cards > div > h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5%;
+}
+
+.div_cards > div > p {
+  width: 80%;
+}
+
+.div_cards > div > a {
+  position: fixed;
+  bottom: 0;
+  margin: 5%;
+  background-color: #383f3f;
+  width: 80%;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 684px) {
+  div.div_container {
+    width: 300px;
+  }
+}

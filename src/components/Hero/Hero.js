@@ -3,6 +3,7 @@ import './Hero.css';
 export const createHero = (parentNode) => {
   const sectionHero = document.createElement('section');
   sectionHero.classList.add('hero', 'flex_container');
+  sectionHero.id = 'about';
 
   const divProfile = document.createElement('div');
   divProfile.classList.add('div_profile', 'flex_container');

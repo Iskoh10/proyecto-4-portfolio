@@ -1,10 +1,15 @@
 import { createHero } from '/src/components/Hero/Hero';
 import { createSecEst } from '/src/components/SecEst/SecEst';
 import { createSecExp } from '/src/components/SecExp/SecExp';
+import { createSecProjects } from '/src/components/Projects/Projects';
 import './Main.css';
 
 export const createMain = (parentNode) => {
   createHero(parentNode);
+
+  const secEstExpContainer = document.createElement('section');
+  secEstExpContainer.classList.add('sec_est_exp', 'flex_container');
+  secEstExpContainer.id = 'exp';
 
   const divSection = document.createElement('div');
   divSection.classList.add('div_section', 'flex_container');
@@ -44,9 +49,12 @@ export const createMain = (parentNode) => {
 
   secSelection.appendChild(pExperience);
 
-  parentNode.appendChild(secSelection);
+  secEstExpContainer.appendChild(secSelection);
+  parentNode.appendChild(secEstExpContainer);
 
-  createSecEst(divSection, parentNode);
+  createSecEst(divSection, secEstExpContainer);
 
-  createSecExp(divSection, parentNode);
+  createSecExp(divSection, secEstExpContainer);
+
+  createSecProjects(parentNode);
 };
