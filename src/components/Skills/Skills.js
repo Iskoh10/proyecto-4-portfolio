@@ -1,4 +1,4 @@
-import { skills } from '/src/components/Data/Data';
+import { skills } from '/src/Data/Data';
 import './Skills.css';
 
 export const skillsDraw = (parent1, parent2) => {

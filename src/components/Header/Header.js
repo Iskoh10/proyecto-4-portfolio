@@ -1,3 +1,4 @@
+import { addBMenu } from '../AddBMenu/AddBMenu';
 import './Header.css';
 
 export const createHeader = (parendNode) => {

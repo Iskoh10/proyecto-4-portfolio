@@ -1,4 +1,4 @@
-import { projects } from '/src/components/Data/Data';
+import { projects } from '/src/Data/Data';
 import { createButton2 } from '/src/components/Buttons/Buttons';
 import './Projects.css';
 

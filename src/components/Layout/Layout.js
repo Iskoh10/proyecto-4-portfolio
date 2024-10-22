@@ -2,6 +2,7 @@ import { createHeader } from '/src/components/Header/Header';
 import { createMain } from '/src/components/Main/Main';
 import { createFooter } from '/src/components/Footer/Footer';
 import './Layout.css';
+import { addBMenu } from '../AddBMenu/AddBMenu';
 
 export const createLayout = () => {
   const mainContainer = document.createElement('div');
@@ -29,4 +30,5 @@ export const createLayout = () => {
   mainContainer.appendChild(footer);
 
   document.body.appendChild(mainContainer);
+  addBMenu();
 };

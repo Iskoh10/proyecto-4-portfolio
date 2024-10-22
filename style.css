@@ -34,7 +34,7 @@
   --isc-fs-exp-title: 24px;
   --isc-fs-30: 30px;
   --isc-fs-48: 48px;
-  --isc-fs-clamp: clamp(1.5rem, 2vw, 2rem);
+  --isc-fs-clamp: clamp(1.3rem, 2vw, 2rem);
 
   /* font weight*/
   --isc-fw-sb: 600;
@@ -50,8 +50,8 @@
   --isc-margin-0-1: 0 1%;
 
   /* gap */
-  --isc-gap-4: 4%;
   --isc-gap-2: 2%;
+  --isc-gap-4: 4%;
 
   --isc-gap-5: 5px;
   --isc-gap-30: 30px;
