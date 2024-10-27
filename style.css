@@ -129,6 +129,7 @@
   font-style: var(--isc-font-style);
   color: var(--isc-fc);
   background-color: var(--isc-bg-color1);
+  border: 1px solid red;
 }
 
 ol,

@@ -59,7 +59,7 @@ ul.ulLinks {
   }
 }
 
-@media screen and (min-width: 388px) and (max-width: 649px) {
+@media screen and (min-width: 320px) and (max-width: 649px) {
   header.header {
     height: 200px;
   }
@@ -69,9 +69,9 @@ ul.ulLinks {
   }
 
   div.links {
-    position: absolute;
-    margin-left: -600px;
+    display: none;
     width: 50%;
+    transition: all 1s 0.4s;
   }
 
   ul.ulLinks {
@@ -80,6 +80,6 @@ ul.ulLinks {
   }
 
   div.show {
-    margin-left: 25%;
+    display: flex;
   }
 }
